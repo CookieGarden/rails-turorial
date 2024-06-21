@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # http://127.0.0.1:3000/static_pages/home
   root  'static_pages#home'
