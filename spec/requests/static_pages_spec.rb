@@ -1,11 +1,23 @@
 require 'rails_helper'
 
 RSpec.describe "StaticPages", type: :request do
-  describe "GET /static_pages/home" do
-    it "success to get root" do
+  describe "GET /static_pages" do
+    it "success to get root page" do
       get root_url
       expect(response).to have_http_status(200)
-      # expect(response.body).to have_selector("title", text: "Home | Ruby on Rails Tutorial Sample App")
+      expect(response.body).to include("Home | Ruby on Rails Tutorial Sample App")
+    end
+    it "success to get about page" do
+      get static_pages_about_path	
+      expect(response).to have_http_status(200)
+      expect(response.body).to include("About | Ruby on Rails Tutorial Sample App")
+
+    end
+    it "success to get help page" do
+      get static_pages_help_path	
+      expect(response).to have_http_status(200)
+      expect(response.body).to include("Help | Ruby on Rails Tutorial Sample App")
+
     end
   end
 end
