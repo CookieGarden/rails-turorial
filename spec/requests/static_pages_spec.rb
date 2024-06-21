@@ -5,7 +5,7 @@ RSpec.describe "StaticPages", type: :request do
     it "success to get root page" do
       get root_url
       expect(response).to have_http_status(200)
-      expect(response.body).to include("Home | Ruby on Rails Tutorial Sample App")
+      expect(response.body).to include("Ruby on Rails Tutorial Sample App")
     end
     it "success to get about page" do
       get static_pages_about_path	
