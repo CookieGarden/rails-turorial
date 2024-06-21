@@ -19,6 +19,8 @@ gem 'rubocop-rake'
 gem 'rubocop-rspec'
 gem 'erb_lint'
 
+gem 'bootstrap-sass', '3.4.1'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
