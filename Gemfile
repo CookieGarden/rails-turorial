@@ -8,6 +8,14 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "rspec-rails"
 gem "pry"
 
+gem 'rubocop'
+gem 'rubocop-ast'
+gem 'rubocop-performance'
+gem 'rubocop-rails'
+gem 'rubocop-rake'
+gem 'rubocop-rspec'
+gem 'erb_lint'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
