@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get   'static_pages/help'
   # http://127.0.0.1:3000/static_pages/about
   get   'static_pages/about'
+  # http://127.0.0.1:3000/static_pages/about
+  get   'static_pages/contact'
 end
