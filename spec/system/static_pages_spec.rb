@@ -23,4 +23,11 @@ RSpec.describe 'StaticPages', type: :system do
       expect(page).to have_title('About | Ruby on Rails Tutorial Sample App')
     end
   end
+
+  describe 'GET /contact' do
+    it 'has the correct title' do
+      visit static_pages_contact_path
+      expect(page).to have_title('Contact | Ruby on Rails Tutorial Sample App')
+    end
+  end
 end
