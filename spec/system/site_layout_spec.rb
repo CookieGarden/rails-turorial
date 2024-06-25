@@ -9,7 +9,8 @@ RSpec.describe 'Site Layout', type: :system do
   end
 
   describe 'GET /home' do
-    before {click_link 'Home'}
+    before { click_link 'Home' }
+
     scenario '正しく遷移できているか' do
       expect(page).to have_content('Welcome to the Sample App')
     end
@@ -20,7 +21,8 @@ RSpec.describe 'Site Layout', type: :system do
   end
 
   describe 'GET /about' do
-    before {click_link 'About'}
+    before { click_link 'About' }
+
     scenario '正しく遷移できているか' do
       expect(page).to have_content('Ruby on Rails Tutorial is a book and screencast')
     end
@@ -31,7 +33,8 @@ RSpec.describe 'Site Layout', type: :system do
   end
 
   describe 'GET /help' do
-    before {click_link 'Help'}
+    before { click_link 'Help' }
+
     scenario '正しく遷移できているか' do
       expect(page).to have_content('Get help on the Ruby on Rails Tutorial')
     end
@@ -42,7 +45,8 @@ RSpec.describe 'Site Layout', type: :system do
   end
 
   describe 'GET /contact' do
-    before {click_link 'Contact'}
+    before { click_link 'Contact' }
+
     scenario '正しく遷移できているか' do
       expect(page).to have_content('Contact the Ruby on Rails Tutorial')
     end
