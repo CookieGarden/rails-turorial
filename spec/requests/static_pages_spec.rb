@@ -3,23 +3,24 @@
 require 'rails_helper'
 
 RSpec.describe 'StaticPages', type: :request do
-  describe 'GET /' do
-    it 'responds successfully' do
+  describe 'responds successfully' do
+    it 'GET /' do
       get root_path
       expect(response).to have_http_status(200)
     end
-  end
 
-  describe 'GET /help' do
-    it 'responds successfully' do
-      get static_pages_help_path
+    it 'GET /help' do
+      get help_path
       expect(response).to have_http_status(200)
     end
-  end
 
-  describe 'GET /about' do
-    it 'responds successfully' do
-      get static_pages_about_path
+    it 'GET /about' do
+      get about_path
+      expect(response).to have_http_status(200)
+    end
+
+    it 'GET /contact' do
+      get contact_path
       expect(response).to have_http_status(200)
     end
   end
