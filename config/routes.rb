@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'users/new'
   # http://127.0.0.1:3000/static_pages/home
   # root_path = /
   # root_url  = http://127.0.0.1:3000/
